@@ -80,12 +80,12 @@ nav a:hover{
 }
 
 #home {
-  height: 85vh;
+  height: 100vh;
   background-image: url("Images/dp2.jpg");
   background-position:top 10px  center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   position: relative;
   z-index: 3;
   width: 100%;
@@ -113,7 +113,7 @@ nav a:hover{
   z-index: 5;
 
 }
-.shortintro h1{
+.element1 h1{
   font-size: 3.2rem;
 }
 .shortintro a{
@@ -228,6 +228,7 @@ background-color: #15131b;
   left: 0;
   z-index: -1;
 }
+
 .project{
   padding: 10px;
 }
@@ -236,6 +237,9 @@ background-color: #15131b;
   border:2px solid #8eecff;
  box-shadow: 0px 4px 10px black;
 
+}
+.modal{
+  z-index: 3;
 }
 #ContactMe{
   color: White;

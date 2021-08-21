@@ -9,7 +9,8 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
   <title>Indranil Kar</title>
 </head>
@@ -57,8 +58,17 @@
           </section> -->
     <section id="home">
       <div class="shortintro h-100 w-75 h-75 d-flex flex-column justify-content-center">
-        <h1>Hey I'm Indranil</span>,</h1>
-        <i> a programmer</i>
+        <div class="element1"></div>
+        <!-- <div id="typed-string1">
+          <h1>Hey I'm Indranil </h1>
+        </div> -->
+        <div class="element2"></div>
+        <div id="typed-string2">
+          <p><i>a programmer </i></p>
+          <p><i>a web developer </i></p>
+          <p><i>a student </i></p>
+        </div>
+        
         <div class="icons mt-3">
           <a href="https://github.com/indranil786" target="_blank"><i class="fab fa-github p-2"></i></a>
           <a href="https://www.linkedin.com/in/indranil786/" target="_blank"><i class="fab fa-linkedin p-2"></i></a>
@@ -70,34 +80,30 @@
     <section id="about-me">
       <h1 class="text-center p-3">About Me</h1>
       <div class="main-about row pb-3 w-100">
-        <div class="picture col-lg-4 d-flex justify-content-center">
+        <div class="picture col-lg-4 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1000">
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <lottie-player src="Images/lotte.json" background="transparent" speed="1" style="width: 320px; height: 320px"
             loop autoplay></lottie-player>
           <!-- <img src="Images/about-me gif.gif" alt="" width="300px" height="300px"> -->
         </div>
-        <div class="text col-lg-8 p-lg-5">
+        <div class="text col-lg-8 p-lg-5" data-aos="fade-up" data-aos-duration="1000">
           <p>
-            <!-- Hi , I am Indranil Kar, currently pursuing Computer Science
-            Engineering , from Future Institute Of Engineering And Management,
-            Kolkata. I started my coding journey 6 years ago when I was
-            fascinated by the power of coding, since then I have developed my
-            interest in the field of Webdevelopment.I am proficient in Java,
-            Python and Web Technologies such as HTML, CSS, JS and still
-            learning. I aspire to be a efficient full-stack developer. I am
-            also intres -->
-            A young kid from The City Of Joy, Kolkata, who was fascinated by technology and Computers, I Indranil Kar started my journey into 
+            A young kid from The City Of Joy, Kolkata, who is fascinated by technology and Computers, I Indranil Kar started my journey into 
             the world of programming 6 years ago. I am a tech-enthusiast who loves building stuffs and learning new things. I love to surf around different
             tech blogs and videos about almost anything related to computers,hardwares or software 😂. I like to promote the culture of Kolkata, and I often spend my free time roaming around the city and exploring different food and chai places ( well I am a huge foodie too 😉).
-
            </p>
+           <div class="resume-button d-flex justify-content-center">
+            <a href="https://github.com/indranil786/portfoliov2/raw/main/Images/indranil_kar_resume.pdf" class="btn btn-lg btn-primary" target="_blank"> Resume  <i class="far fa-address-card"></i></a>
+
+           </div>
+
         </div>
       </div>
     </section>
     <section id="skills" >
       <h1 class="text-center p-3">Skills</h1>
       <div class="container">
-        <div class="images row p-3">
+        <div class="images row p-3" data-aos="fade-down" data-aos-duration="2000">
           <div class="col p-3 d-flex flex-column align-items-center">
             <img src="Images/htmlsvg.png" class="" alt="" width="110px" height="110px" />
             <p class="text-center p-2">HTML</p>
@@ -131,9 +137,98 @@
     </section>
       <section id="portfolio">
         <h1 class="text-center p-3">My Projects</h1>
-        <div class="container pb-2">
+        <div class="container pb-2" >
           <div class="works row">
-            <div class="project col-lg-4-md-3 mx-auto">
+            <div class="project col-lg-4-md-3 mx-auto" >
+              <div class="card ">
+                <img src="Images/apna-cart.jpg" class="card-img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Apna Cart</h5>
+                  <p class="card-text">A e-commerce Website made using Express, Node, MongoDb,</p>
+                  <a href="#" class="btn btn-primary  " data-toggle="modal" data-target="#apnacart">Learn More</a>
+                  <div class="modal fade" id="apnacart" tabindex="-1" aria-labelledby="apnaTitle" aria-hidden="true" data-backdrop="false">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="apnaTitle">Apna Cart</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="Images/apna-cart.jpg" alt="" width="100%">
+                          <div class="description">
+                            <h2 class="p-1">Description</h2>
+                            <p>An E-commerce application built with CRUD functionality, and REST architecture</p>
+                            <h2>Features : </h2>
+                            <ul class="p-2">
+                              <li class="item"><p>Both Local login and Google sign in Authentication</p></li>
+                              <li class="item"><p>Razor Pay Payment Gateway Integration
+                              </p></li>
+                              <li class="item"><p>Uploading of File type Image as jpeg/png format.
+                              </p></li>
+                              <li class="item"><p>You need to be logged in as a admin for performing admin operations.
+                              </p></li>
+                            </ul>
+                            <h5>Demo admin credentials : </h5>
+                            <ul class="p-2">
+                              <li> <strong>Username :</strong> admin</li>
+                              <li> <strong>Password :</strong> admin123</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a class="btn btn-primary  " href="https://github.com/indranil786/apna-cart-v1" role="button" target="_blank"><i class="fab fa-github"></i>&nbsp; Github Link</a>
+                          <a class="btn btn-primary  " href="https://apna-cartv1.herokuapp.com/" role="button" target="_blank">Live Demo</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project col-lg-4-md-3 mx-auto" >
+              <div class="card ">
+                <img src="Images/weather-app.jpg" class="card-img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Weather App</h5>
+                  <p class="card-text">This is a weather app, that displays weather of current location and different locations</p>
+                  <a href="#" class="btn btn-primary  " data-toggle="modal" data-target="#weatherapp">Learn More</a>
+                  <div class="modal fade" id="weatherapp" tabindex="-1" aria-labelledby="weatherTitle" aria-hidden="true" data-backdrop="false">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="weatherTitle">Weather App</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="Images/weather-app.jpg" alt="" width="100%">
+                          <div class="description">
+                            <h2 class="p-1">Description</h2>
+                            <p>This is a weather app, that displays weather of different locations</p>
+                            <h2>Features : </h2>
+                            <ul class="p-2">
+                              <li class="item"><p>Checks for the location of the device first using Geolocation API</p></li>
+                              <li class="item"><p>Handles Error if weather fetching has a problem
+                              </p></li>
+                              <li class="item"><p>Gives a loading animation while fetching the details.
+                              </p></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a class="btn btn-primary  " href="https://github.com/indranil786/weatherApp" role="button" target="_blank"><i class="fab fa-github"></i>&nbsp; Github Link</a>
+                          <a class="btn btn-primary  " href="https://indranil786.github.io/weatherApp/" role="button" target="_blank">Live Demo</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project col-lg-4-md-3 mx-auto" >
               <div class="card ">
                 <img src="Images/memorygame.jpg" class="card-img" alt="...">
                 <div class="card-body">
@@ -183,7 +278,7 @@
                 </div>
               </div>
             </div>
-            <div class="project col-lg-3-md-4 mx-auto">
+            <div class="project col-lg-3-md-4 mx-auto" >
               <div class="card " >
                 <img src="Images/Rain.png" class="card-img" alt="...">
                 <div class="card-body">
@@ -220,8 +315,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="project col-lg-3-md-4 mx-auto" >
+            </div> 
+            <div class="project col-lg-3-md-4 mx-auto">
               <div class="card" >
                 <img src="Images/PrimeNotes.jpg" class="card-img" alt="...">
                 <div class="card-body">
@@ -295,86 +390,7 @@
                 </div>
               </div>
             </div>
-            <div class="project col-lg-3-md-4 mx-auto">
-              <div class="card" >
-                <img src="Images/food.jpg" class="card-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Indranil's Kitchen</h5>
-                  <p class="card-text">A demo site for Restaurant, that showcases Restaurant Features.</p>
-                  <a href="#" class="btn btn-primary  " data-toggle="modal" data-target="#kitchen">Learn More</a>
-                  <div class="modal fade" id="kitchen" tabindex="-1" aria-labelledby="kitchenTitle" aria-hidden="true" data-backdrop="false">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="kitchenTitle">Indranil's Kitchen</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img src="Images/food.jpg" alt="" width="100%">
-                          <div class="description p-2">
-                            <h2>Description</h2>
-                            <p>This is a demo site for a restaurant done using only html and css.This is a static site as of now, and is under developement.</p>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <a class="btn btn-primary  " href="https://github.com/indranil786/food-delivery-demo-site" role="button" target="_blank"><i class="fab fa-github"></i>&nbsp; Github Link</a>
-                          <a class="btn btn-primary  " href="https://indranil786.github.io/food-delivery-demo-site/" role="button" target="_blank">Live Demo</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project col-lg-3-md-4 mx-auto">
-              <div class="card" >
-                <img src="Images/Library.jpg" class="card-img" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title" style="font-size: 18px;">Library Management System</h5>
-                  <p class="card-text">A terminal based Library Management System.</p>
-                  <a href="#" class="btn btn-primary  " data-toggle="modal" data-target="#library">Learn More</a>
-                  <div class="modal fade" id="library" tabindex="-1" aria-labelledby="libraryTitle" aria-hidden="true" data-backdrop="false">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="libraryTitle">Library Management System</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <img src="Images/Library.jpg" alt="" width="100%">
-                          <div class="description p-2">
-                            <h2>Description</h2>
-                            <p>This is a simple demonstration of Library Management System using Python. In this project, I have written only the Admin Panel part. It is just a simple demonstration and I agree to the fact that the code could be a lot simpler and could be more efficient, however this is my first try to build a project, in the near future I hope to improvise it into a better one.</p>
-                            <h3>Storing Of Data</h3>
-                            <p>The Books are stored in the form of Individual Files created with their book name. I have used files which are created/stored in the same directory, as that of the Python File.(As a replacement for Data Base)</p>
-                            <h3>Services Provided By the Library</h3>
-                            <p>The System can perform the following functions:
-                              <ul>
-                                <li>Add Books To Library</li>
-                                <li>Display all the details of all the books present in the Library</li>
-                                <li>Search a particular Book</li>
-                                <li>Borrow a Book</li>
-                                <li>Return a Book</li>
-                                <li>See the list of Books Borrowed</li>
-                              </ul>
-                            </p>
-                            <h3>How to Execute The Program</h3>
-                            <p>Go to the Folder inside which the Python File is present and, run the file from an ide , or using command line - python run main . The files for storing the books will be created in the same directory where the main.py file is present</p>
-                          </div>
-                        </div>
-                        <div class="modal-footer">
-                          <a class="btn btn-primary  " href="https://github.com/indranil786/Library-Management-System" role="button" target="_blank"><i class="fab fa-github"></i>&nbsp; Github Link</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        
           </div>
         </div>
       </section>
@@ -382,7 +398,7 @@
     <section id="ContactMe">
       <h1 class="contact p-2 text-center">Contact Me</h1>
       <div class="contact-sec container-fluid">
-        <h4 class="text-center p-3">Want to discuss something new? Connect with me on Social Media, or send me a message below !</h4>
+        <h4 class="text-center element3 p-3"></h4>
         <div class="mediaicons p-3 mb-2 text-center">
           <a href="https://github.com/indranil786" target="_blank"><i class="fab fa-github p-2"></i></a>
           <a href="https://www.linkedin.com/in/indranil786/" target="_blank"><i class="fab fa-linkedin p-2"></i></a>
@@ -438,26 +454,26 @@
         </div>
           <div class="contact-form col-lg">
             <div class="submit-me p-3">
-              <form action="mailto:karindranil999@gmail.com" method="POST" enctype="text/plain">
+              <form action="https://formspree.io/f/xqkwknrk" method="POST">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputfirstName">First Name</label>
-                    <input type="text" class="form-control" id="inputFirstName" placeholder="ex-John" name="First Name ">
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="ex-John" name="First Name " required>
 
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputlastName">Last Name</label>
-                    <input type="text" class="form-control" id="inputLastName" placeholder="ex-Abraham" name="Last Name ">
+                    <input type="text" class="form-control" id="inputLastName" placeholder="ex-Abraham" name="Last Name " required>
 
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="inputMail">Email</label>
-                  <input type="email" class="form-control" id="inputMail" placeholder="yourexample@email.com" name="Email Id ">
+                  <input type="email" class="form-control" id="inputMail" placeholder="yourexample@email.com" name="Email Id " required> 
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Your Message : </label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Write your Message here...." name="The Message : "></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Write your Message here...." name="The Message : " required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
               </form>
@@ -470,13 +486,54 @@
   </main>
   <footer>
     <h5 class="text-center">© Copyright Indranil Kar. All Rights Reserved</h5>
+    <div class="element"></div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+
+      var options1 = {
+  strings: ["<h1>Hey I am Indranil ,</h1>"],
+  typeSpeed: 45,
+  loop:false,
+  showCursor: false,
+}
+
+      var options2 = {
+        stringsElement: '#typed-string2',
+        typeSpeed: 50,
+        backSpeed: 40,
+        loop: true,
+        showCursor: false,
+          startDelay: 1500,
+      };
+   
+      var options3 = {
+  strings: ["Want to discuss something new? Connect with me on Social Media, or send me a message below !"],
+  typeSpeed: 15,
+  backSpeed: 30,
+  loop:true,
+  showCursor: false,
+  startDelay: 1500,
+}
+      var typed = new Typed('.element1',options1);
+      var typed = new Typed('.element2', options2);
+      var typed=new Typed('.element3', options3);
+
+      window.onLoad = function(){  
+        console.log("hello");
+      }
+
+    
+
+   </script>
 </body>
 
 </html>
