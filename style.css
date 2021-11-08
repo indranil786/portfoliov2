@@ -58,6 +58,9 @@ html{
   padding: 5px;
 
 }
+.hidden-button{
+  display: none;
+}
 h1{
   font-family: var(--notosans);
   font-size: 2.5rem;
